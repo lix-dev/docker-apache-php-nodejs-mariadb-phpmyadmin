@@ -14,8 +14,8 @@ services:
     links:
       - db
     volumes:
-			- ./app/html/:/var/www/html/
-			- ./app/logs/:/var/www/logs/
+      - ./app/html/:/var/www/html/
+      - ./app/logs/:/var/www/logs/
 
   db:
     image: mariadb
