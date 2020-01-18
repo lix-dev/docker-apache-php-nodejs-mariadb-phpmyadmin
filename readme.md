@@ -2,7 +2,7 @@
 ![Landing Page](https://i.ibb.co/vJjXdns/image.png)
 A basic stack environment. It consists of the following:
 - **Apache2**
-- **PHP 7.3**
+- **PHP 7.3.x**
 - **MariaDB**
 - **phpMyAdmin**
 
