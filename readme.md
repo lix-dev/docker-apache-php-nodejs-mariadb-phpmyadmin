@@ -1,5 +1,5 @@
 # Stack for Webdevelopmenent built with Docker Compose
-![Landing Page](https://ibb.co/Jzs3pJx)
+![Landing Page](https://i.ibb.co/vJjXdns/image.png)
 A basic stack environment. It consists of the following:
 - **Apache2**
 - **PHP 7.3**
