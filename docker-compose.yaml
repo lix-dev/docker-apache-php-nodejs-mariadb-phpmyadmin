@@ -6,8 +6,8 @@ services:
       context: ./
       dockerfile: ./app/dockerfile
     environment:
-			- ALLOW_OVERRIDE=true
-			- APACHE_LOG_DIR=/var/www/logs/
+      - ALLOW_OVERRIDE=true
+      - APACHE_LOG_DIR=/var/www/logs/
     ports:
       - "80:80"
     links:
