@@ -106,4 +106,4 @@ Stop and remove Container Stack
 
 ## Ready
 
-Now you can acces your Webserver via: **http://localhost**
+Access your Webserver via: **http://localhost**
