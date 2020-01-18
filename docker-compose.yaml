@@ -2,6 +2,7 @@ version: "3"
 
 services:
   web:
+    container_name: dev-web
     build:
       context: ./
       dockerfile: ./app/dockerfile
@@ -19,6 +20,7 @@ services:
 
   db:
     image: mariadb
+    container_name: dev-mariadb
     restart: always
     volumes:
       - ./db/data/:/var/lib/mysql
@@ -32,7 +34,7 @@ services:
   
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
+    container_name: dev-phpmyadmin
     environment:
       PMA_HOST: db
       PMA_PORT: 3306
