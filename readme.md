@@ -31,7 +31,7 @@ Apache Container also included:
 
 ## Configuration
 
-You can change some Envoirement Variables like MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE in ./docker-compose.yaml 
+You can change some environment variables like MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE in ./docker-compose.yaml 
 
 ```yaml
 version: "3"
