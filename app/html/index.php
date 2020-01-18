@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<h1>Webserver ist running! You can run your Application.</h1>
+	<h1>Webserver is running!</h1>
 </body>
 
 </html>
