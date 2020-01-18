@@ -8,6 +8,7 @@ services:
     environment:
       - ALLOW_OVERRIDE=true
       - APACHE_LOG_DIR=/var/www/logs/
+      - APACHE_DOCUMENT_ROOT=/var/www/html/
     ports:
       - "80:80"
     links:
