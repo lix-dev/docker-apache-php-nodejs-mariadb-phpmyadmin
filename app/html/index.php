@@ -5,11 +5,6 @@
 	<title>Stack for Webdevelopmenent built with Docker Compose</title>
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
-	<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script>
-		hljs.initHighlightingOnLoad();
-	</script>
 </head>
 
 <body>
