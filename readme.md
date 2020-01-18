@@ -80,9 +80,27 @@ services:
 
 ## Run Container Stack
 
+Run Container Stack detached
+
 ```bash
 
 > docker-compose up -d
+
+```
+
+Rebuild after some configuration changes	
+
+```bash
+
+> docker-compose up -d --build
+
+```
+
+Stop and remove Container Stack
+
+```bash
+
+> docker-compose down
 
 ```
 
