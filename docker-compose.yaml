@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: ./app/dockerfile
+    environment:
+      - ALLOW_OVERRIDE=true
+    ports:
+      - "80:80"
+    links:
+      - db
+    volumes:
+      - ./app/html/:/var/www/html/
+
+  db:
+    image: mariadb
+    restart: always
+    volumes:
+      - ./db/data/:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: dev-root
+      MYSQL_USER: dev-user
+      MYSQL_PASSWORD: dev-password
+      MYSQL_DATABASE: dev-database
+    ports:
+      - "8889:3306"
+  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    restart: always
+    ports:
+        - 8080:80
+    volumes:
+        - /sessions
+    links:
+        - db
