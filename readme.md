@@ -17,10 +17,13 @@ Apache Container also included:
 ## Installation
 ```bash
 
+# Clone Git-Repository
 git clone https://github.com/lix-dev/docker-apache-php-nodejs-mariadb-phpmyadmin
 
+# Repository folder
 cd docker-apache-php-nodejs-mariadb-phpmyadmin/
 
+# Run Docker Container Stack
 docker-compose up -d
 
 ```
