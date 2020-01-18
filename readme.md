@@ -15,8 +15,12 @@ Apache Container also included:
 - Screen
 
 ## Installation
-```shell
+```bash
+
 git clone https://github.com/lix-dev/docker-apache-php-nodejs-mariadb-phpmyadmin
-cd docker-apache-php-nodejs-mariadb-phpmyadmin
+
+cd docker-apache-php-nodejs-mariadb-phpmyadmin/
+
 docker-compose up -d
+
 ```
