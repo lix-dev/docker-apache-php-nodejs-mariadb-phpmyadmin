@@ -38,20 +38,25 @@ version: "3"
 
 services:
   web:
+    container_name: dev-web
     build:
       context: ./
       dockerfile: ./app/dockerfile
     environment:
       - ALLOW_OVERRIDE=true
+      - APACHE_LOG_DIR=/var/www/logs/
+      - APACHE_DOCUMENT_ROOT=/var/www/html/
     ports:
-      - "80:80"
+      - "8081:80"
     links:
       - db
     volumes:
       - ./app/html/:/var/www/html/
+      - ./app/logs/:/var/www/logs/
 
   db:
     image: mariadb
+    container_name: dev-mariadb
     restart: always
     volumes:
       - ./db/data/:/var/lib/mysql
@@ -65,7 +70,7 @@ services:
   
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
+    container_name: dev-phpmyadmin
     environment:
       PMA_HOST: db
       PMA_PORT: 3306
