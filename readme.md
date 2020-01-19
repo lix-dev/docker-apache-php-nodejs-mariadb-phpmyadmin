@@ -112,3 +112,4 @@ Stop and remove Container Stack
 ## Ready
 
 Access your Webserver via: **http://localhost**
+Access phpMyAdmin via: **http://localhost:8080**
