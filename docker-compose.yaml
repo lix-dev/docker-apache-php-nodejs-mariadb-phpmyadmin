@@ -11,7 +11,7 @@ services:
       - APACHE_LOG_DIR=/var/www/logs/
       - APACHE_DOCUMENT_ROOT=/var/www/html/
     ports:
-      - "8081:80"
+      - "80:80"
     links:
       - db
     volumes:
